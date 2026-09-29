@@ -304,29 +304,41 @@ export default function Home() {
         </section>
 
         {/* ABOUT */}
-        <section id="about" className="border-y border-black/[0.07] bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-24 sm:px-10 lg:py-32">
-            <SectionLabel number="01" title="About" />
-            <div className="mt-10 grid items-center gap-12 lg:grid-cols-[.75fr_1.25fr] lg:gap-20">
-              <div className="relative mx-auto w-full max-w-[260px]">
-                <div className="absolute -inset-3 rounded-[30px] border border-black/[0.06]" />
-                <div className="relative overflow-hidden rounded-[26px] bg-[#eef0f2]">
-                  <img src="/image.png" alt="Amrutha Kattimani" className="aspect-[4/5] h-full w-full object-cover grayscale transition duration-700 hover:grayscale-0" onError={(e) => { e.currentTarget.style.display = "none"; e.currentTarget.parentElement?.classList.add("flex", "items-center", "justify-center"); if (e.currentTarget.parentElement) e.currentTarget.parentElement.innerHTML = "<span style=\"font-size:72px;font-weight:700;letter-spacing:-.08em;color:#101828\">AK</span>"; }} />
-                </div>
+        <section id="about" className="min-h-screen border-y border-white/10 bg-[#101828] text-white">
+          <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-16 sm:px-10 lg:py-20">
+            <SectionLabel number="01" title="About" dark />
+
+            <div className="mt-8">
+              <h2 className="text-4xl font-semibold tracking-[-0.045em] sm:text-5xl">About Me</h2>
+              <div className="mt-5 max-w-3xl space-y-3 text-[14px] leading-6 text-white/60">
+                <p>I am a Computer Science student at PES University with interests in artificial intelligence, machine learning, computer vision and research-oriented software systems.</p>
+                <p>I enjoy breaking complex problems into experiments, understanding the results and turning useful ideas into practical software.</p>
               </div>
-              <div>
-                <h2 className="text-4xl font-semibold tracking-[-0.045em] text-[#101828] sm:text-5xl">About Me</h2>
-                <div className="mt-6 max-w-2xl space-y-4 text-[15px] leading-7 text-neutral-500">
-                  <p>I am a Computer Science student at PES University with interests in artificial intelligence, machine learning, computer vision and research-oriented software systems.</p>
-                  <p>I enjoy breaking complex problems into experiments, understanding the results and turning useful ideas into practical software.</p>
-                </div>
-                <div className="mt-9 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-black/[0.07] bg-black/[0.07] sm:grid-cols-4">
-                  {[['AI / ML','Focus'],['Computer Vision','Research'],['Software','Build'],['Research','Explore']].map(([value,label]) => (
-                    <div key={value} className="bg-white px-4 py-5">
-                      <p className="text-sm font-semibold text-[#101828]">{value}</p>
-                      <p className="mt-1 font-mono text-[8px] uppercase tracking-[0.18em] text-neutral-400">{label}</p>
-                    </div>
-                  ))}
+
+              <div className="mt-7 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-3">
+                {[['AI / ML','Focus'],['Computer Vision','Research'],['Software','Build']].map(([value,label]) => (
+                  <div key={value} className="bg-[#101828] px-5 py-4">
+                    <p className="text-sm font-semibold text-white">{value}</p>
+                    <p className="mt-1 font-mono text-[8px] uppercase tracking-[0.18em] text-white/35">{label}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 border-t border-white/10 pt-7">
+                <p className="font-mono text-[9px] font-semibold uppercase tracking-[0.24em] text-[#ff9a70]">Other than code</p>
+                <div className="mt-4 grid gap-3 md:grid-cols-3">
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.035] px-5 py-4 transition hover:-translate-y-0.5 hover:border-[#ff9a70]/30 hover:bg-white/[0.06]">
+                    <div className="flex items-center gap-3"><span className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-lg" aria-hidden="true">✎</span><p className="text-sm font-semibold text-white">Pencil Sketch</p></div>
+                    <p className="mt-3 text-[12px] leading-5 text-white/50">Exploring ideas through drawing, detail and visual expression.</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.035] px-5 py-4 transition hover:-translate-y-0.5 hover:border-[#ff9a70]/30 hover:bg-white/[0.06]">
+                    <div className="flex items-center gap-3"><span className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-lg" aria-hidden="true">♫</span><p className="text-sm font-semibold text-white">Guitar</p></div>
+                    <p className="mt-3 text-[12px] leading-5 text-white/50">Learning and playing guitar as a creative and relaxing pursuit.</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.035] px-5 py-4 transition hover:-translate-y-0.5 hover:border-[#ff9a70]/30 hover:bg-white/[0.06]">
+                    <div className="flex items-center gap-3"><span className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-lg" aria-hidden="true">✦</span><p className="text-sm font-semibold text-white">Western Dance</p></div>
+                    <p className="mt-3 text-[12px] leading-5 text-white/50">Enjoying movement, rhythm and performance through dance.</p>
+                  </div>
                 </div>
               </div>
             </div>
