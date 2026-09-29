@@ -54,11 +54,11 @@ const projects = [
 ];
 
 const skillTabs = [
-  { id: "all", label: "ALL", skills: ["PyTorch","Transformers","OpenCV","FastAPI","React.js","Next.js","Node.js","Express","Python","C/C++","JavaScript","TypeScript","SQL","Pandas","NumPy","MongoDB","PostgreSQL","Docker","Kubernetes","AWS","Azure","Git","GitHub","RAG"] },
+  { id: "all", label: "ALL", skills: ["PyTorch","Transformers","OpenCV","FastAPI","React.js","Next.js","Node.js","Express","Python","C/C++","JavaScript","TypeScript","SQL","Pandas","NumPy","MongoDB","PostgreSQL","Docker","Git","GitHub","RAG"] },
   { id: "ai", label: "AI / ML", skills: ["PyTorch","Transformers","OpenCV","Computer Vision","Machine Learning","RAG","LangChain","Hugging Face"] },
   { id: "web", label: "WEB", skills: ["React.js","Next.js","Node.js","Express","FastAPI","Tailwind CSS","REST APIs","TypeScript"] },
-  { id: "cloud", label: "CLOUD", skills: ["AWS","AWS SageMaker","Azure","Azure Machine Learning","Docker","Kubernetes","Cloudflare"] },
-  { id: "data", label: "DATA", skills: ["Pandas","NumPy","SQL","MongoDB","PostgreSQL","MySQL","Apache Spark","Hadoop","Kafka","Databricks"] },
+  { id: "cloud", label: "CLOUD", skills: ["Docker"] },
+  { id: "data", label: "DATA", skills: ["Pandas","NumPy","SQL","MongoDB","PostgreSQL","MySQL","Apache Spark","Hadoop","Kafka"] },
   { id: "languages", label: "LANGUAGES", skills: ["Python","C/C++","JavaScript","TypeScript","SQL","HTML","CSS"] },
 ];
 
